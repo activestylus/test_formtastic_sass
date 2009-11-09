@@ -1,0 +1,19 @@
+- title "Posts"
+
+%table
+  %tr
+    %th Title
+    %th Body
+    %th Category
+    %th Live
+  - for post in @posts
+    %tr
+      %td= h post.title
+      %td= h post.body
+      %td= h post.category
+      %td= h post.live
+      %td= link_to 'Show', post
+      %td= link_to 'Edit', edit_post_path(post)
+      %td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Post", new_post_path

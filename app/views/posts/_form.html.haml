@@ -1,0 +1,16 @@
+- semantic_form_for(@post, :url => posts_path) do |f|
+  = error_messages_for 'post', :object=>@post
+  - f.inputs :name => "My Cool Form" do
+    = f.input :title,    :hint=>'Make it something catchy'
+    = f.input :body,     :input_html => {:rows=>3}
+    = f.input :live,     :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+    = f.input :category, :as => :radio,  :collection=>['Accessories','Bookshelves','Cameras','Computers','Digital Cameras'], :hint=> "Floated checkboxes can be buggy in IE - suggestions/hacks are welcome!"
+      
+    = f.input :created_at
+    
+  - f.buttons :class=>'buttons' do
+    %li
+      = f.submit "Save"
+    %li
+      = link_to "Cancel", posts_path
+%em Inline element here to test form clearing

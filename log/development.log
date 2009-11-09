@@ -1,0 +1,3966 @@
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-03 22:25:36) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: posts: SELECT * FROM "posts" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: posts: SELECT * FROM "posts" ):
+  app/controllers/posts_controller.rb:3:in `index'
+  haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (175.1ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091103212334)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "category" varchar(255), "live" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091103212334')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-03 22:32:14) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 81ms (View: 60, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:32:16) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (134.5ms)
+Completed in 180ms (View: 157, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:33:05) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.6ms)
+Completed in 121ms (View: 98, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:35:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (133.2ms)
+Completed in 161ms (View: 138, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:37:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.8ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:38:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 161ms (View: 139, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:41:58) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (195.3ms)
+Completed in 350ms (View: 325, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:43:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.3ms)
+Completed in 100ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:43:48) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (65.9ms)
+Completed in 171ms (View: 147, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:43:56) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.8ms)
+Completed in 101ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:44:24) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (134.6ms)
+Completed in 170ms (View: 147, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:46:51) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:48:23) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (135.9ms)
+Completed in 163ms (View: 140, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:49:03) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:49:31) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 87ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:50:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.5ms)
+Completed in 87ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:50:48) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.3ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:50:56) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.7ms)
+Completed in 87ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:51:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.1ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:51:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.6ms)
+Completed in 87ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:51:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.7ms)
+Completed in 86ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:51:49) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.0ms)
+Completed in 165ms (View: 142, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:52:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:53:00) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (136.8ms)
+Completed in 164ms (View: 141, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-03 22:53:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.8ms)
+Completed in 86ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:53:55) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (171.7ms)
+Completed in 215ms (View: 176, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:54:36) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (91.7ms)
+Completed in 135ms (View: 105, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:55:31) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (169.9ms)
+Completed in 205ms (View: 174, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:55:40) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.7ms)
+Completed in 119ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:56:14) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (88.6ms)
+Completed in 123ms (View: 93, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:57:54) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (91.5ms)
+Completed in 129ms (View: 96, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 22:59:44) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (87.4ms)
+Completed in 122ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 23:00:12) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (87.4ms)
+Completed in 122ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 23:02:16) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (172.7ms)
+Completed in 207ms (View: 177, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 23:02:37) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.0ms)
+Completed in 119ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 23:03:20) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (87.5ms)
+Completed in 122ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-03 23:08:30) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (168.6ms)
+Completed in 203ms (View: 173, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 00:01:54) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (77.1ms)
+Completed in 104ms (View: 82, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 00:02:49) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (88.4ms)
+Completed in 201ms (View: 172, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 00:04:28) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.6ms)
+Completed in 121ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 00:05:03) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>"Scanners"}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (165.4ms)
+Completed in 199ms (View: 170, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 00:12:32) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.0ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 00:59:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (221.9ms)
+Completed in 534ms (View: 386, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 00:59:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (499.4ms)
+Completed in 530ms (View: 505, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 01:00:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.7ms)
+Completed in 120ms (View: 97, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 01:00:47) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.2ms)
+Completed in 204ms (View: 181, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 01:02:37) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.6ms)
+Completed in 99ms (View: 76, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:18:37) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (65.5ms)
+Completed in 112ms (View: 89, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:19:00) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.8ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:23:54) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 100ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:23:59) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.2ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:24:03) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.1ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:24:06) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.4ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:32:58) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.5ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:33:03) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (134.0ms)
+Completed in 163ms (View: 140, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:33:49) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 99ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:33:53) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.3ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:33:55) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.9ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:34:30) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.7ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:34:37) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.6ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:34:39) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.0ms)
+Completed in 101ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:35:20) [GET]
+  Parameters: {"form"=>"float"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 100ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new?form=float]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:35:27) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.7ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:35:29) [GET]
+  Parameters: {"form"=>"float-right"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.5ms)
+Completed in 92ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new?form=float-right]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:38:34) [GET]
+  Parameters: {"form"=>"float-right"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.9ms)
+Completed in 106ms (View: 82, DB: 0) | 200 OK [http://localhost/posts/new?form=float-right]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:38:49) [GET]
+  Parameters: {"form"=>"float-right"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.2ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=float-right]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:38:56) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:39:09) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 166ms (View: 142, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:39:14) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.5ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:39:56) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.7ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:40:01) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (142.1ms)
+Completed in 172ms (View: 149, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:40:04) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.0ms)
+Completed in 90ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:40:18) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.8ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:40:21) [GET]
+  Parameters: {"form"=>"float-right"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=float-right]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:41:03) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.5ms)
+Completed in 99ms (View: 76, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:41:06) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.6ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:42:35) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.1ms)
+Completed in 163ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:43:43) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.4ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:44:52) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.5ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:46:13) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.5ms)
+Completed in 167ms (View: 144, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:47:14) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.4ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:47:48) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.1ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:48:09) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.6ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:49:04) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.7ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:49:20) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:54:59) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (65.2ms)
+Completed in 99ms (View: 72, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:56:44) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.8ms)
+Completed in 105ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:57:07) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.6ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:57:30) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.3ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:57:42) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.5ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:57:46) [GET]
+  Parameters: {"form"=>"stack"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.5ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new?form=stack]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:57:48) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.8ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:58:07) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.8ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 10:59:17) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.0ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:01:16) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (137.8ms)
+Completed in 167ms (View: 144, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:01:25) [GET]
+  Parameters: {"form"=>"float-right"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.1ms)
+Completed in 89ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=float-right]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:04:51) [GET]
+  Parameters: {"form"=>"nil"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.1ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new?form=nil]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:04:53) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.8ms)
+Completed in 196ms (View: 173, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 11:04:56) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (87.6ms)
+Completed in 123ms (View: 94, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 11:05:09) [GET]
+  Parameters: {"form"=>"stack"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 40ms (View: 21, DB: 0) | 200 OK [http://localhost/posts?form=stack]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 11:12:22) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.0ms)
+Completed in 120ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:12:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.3ms)
+Completed in 103ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:12:30) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.5ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 11:12:45) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.0ms)
+Completed in 120ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:13:20) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.4ms)
+Completed in 175ms (View: 153, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 11:13:28) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>"valuefloat-left"}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.2ms)
+Completed in 121ms (View: 93, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:14:39) [GET]
+  Parameters: {"form"=>"float-left"}
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.4ms)
+Completed in 172ms (View: 150, DB: 0) | 200 OK [http://localhost/posts/new?form=float-left]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 11:14:41) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>"float-left"}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (93.1ms)
+Completed in 131ms (View: 100, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 11:14:52) [GET]
+  Parameters: {"form"=>"float-right"}
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 24ms (View: 5, DB: 0) | 200 OK [http://localhost/posts?form=float-right]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:21:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 100ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:21:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.3ms)
+Completed in 160ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:22:14) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.1ms)
+Completed in 98ms (View: 70, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:22:29) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:23:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (133.0ms)
+Completed in 161ms (View: 139, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:42:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.9ms)
+Completed in 102ms (View: 79, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 11:43:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.4ms)
+Completed in 103ms (View: 80, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 12:09:52) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.5ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 12:10:06) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.8ms)
+Completed in 121ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 12:57:02) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (165.1ms)
+Completed in 208ms (View: 179, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:04:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.0ms)
+Completed in 93ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:04:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.2ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:05:15) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.8ms)
+Completed in 100ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:09:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 104ms (View: 81, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:12:23) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.5ms)
+Completed in 104ms (View: 81, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:12:49) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.9ms)
+Completed in 94ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:13:42) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (65.6ms)
+Completed in 104ms (View: 81, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:14:08) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:15:02) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.8ms)
+Completed in 89ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 13:16:08) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.0ms)
+Completed in 196ms (View: 167, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:17:56) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.7ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:19:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.5ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 13:20:48) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (88.9ms)
+Completed in 125ms (View: 96, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 13:21:01) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (87.9ms)
+Completed in 124ms (View: 95, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 13:21:57) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "category"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>""}, "authenticity_token"=>"+D1iv+7giVDczH6u1FYXMQLT0WM/+p6zhi3Y8eGkoP8=", "form"=>""}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.5ms)
+Completed in 122ms (View: 93, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:22:08) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:23:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.3ms)
+Completed in 93ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:31:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (138.8ms)
+Completed in 168ms (View: 145, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:32:15) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.7ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:42:10) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (136.2ms)
+Completed in 165ms (View: 143, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:42:15) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.6ms)
+Completed in 91ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:42:19) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.8ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 13:42:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.0ms)
+Completed in 94ms (View: 70, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:35:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.9ms)
+Completed in 110ms (View: 83, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:36:05) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.4ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:36:07) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.5ms)
+Completed in 97ms (View: 71, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:36:54) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.8ms)
+Completed in 89ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:37:01) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (141.6ms)
+Completed in 171ms (View: 148, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:38:09) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.1ms)
+Completed in 106ms (View: 83, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:40:07) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (137.8ms)
+Completed in 167ms (View: 144, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:45:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.0ms)
+Completed in 105ms (View: 83, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:46:09) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.2ms)
+Completed in 95ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:47:48) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:48:15) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.7ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:50:14) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.5ms)
+Completed in 112ms (View: 89, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:51:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (131.2ms)
+Completed in 179ms (View: 157, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:53:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.2ms)
+Completed in 110ms (View: 86, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:53:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.9ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 14:54:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.9ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:01:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.9ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:02:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (140.0ms)
+Completed in 170ms (View: 147, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:38:38) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (105.8ms)
+Completed in 136ms (View: 113, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:39:52) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:40:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.0ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:41:19) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.5ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:41:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.9ms)
+Completed in 90ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:42:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:42:52) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.3ms)
+Completed in 93ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:43:19) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.4ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:46:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.4ms)
+Completed in 173ms (View: 150, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:57:32) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 15:57:41) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.7ms)
+Completed in 89ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:03:48) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.9ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:11:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:12:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.9ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:13:00) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.7ms)
+Completed in 168ms (View: 146, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:13:54) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:15:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.4ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 16:19:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (141.4ms)
+Completed in 171ms (View: 148, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 20:21:48) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.2ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 20:22:15) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.9ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 20:23:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (131.8ms)
+Completed in 177ms (View: 155, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 20:24:17) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 106ms (View: 83, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 20:24:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.5ms)
+Completed in 90ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 20:55:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.0ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:44:22) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:46:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.7ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:48:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.1ms)
+Completed in 101ms (View: 79, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:48:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.3ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:53:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.6ms)
+Completed in 94ms (View: 71, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:54:11) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:54:42) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.0ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:55:50) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+
+ActionView::TemplateError (Invalid filter name ":as=>:string,".) on line #5 of app/views/posts/_form.html.haml:
+2:   = error_messages_for 'post', :object=>@post
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input :title,
+5:       :as=>:string,
+6:       :hint=>'Make it something catchy'
+7:     = f.input :body, :input_html=> {:rows=>5}
+8:     = f.input :live, :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+
+    app/views/posts/_form.html.haml:5
+    haml (2.2.6) lib/haml/precompiler.rb:839:in `start_filtered'
+    haml (2.2.6) lib/haml/precompiler.rb:237:in `process_line'
+    haml (2.2.6) lib/haml/precompiler.rb:168:in `precompile'
+    haml (2.2.6) lib/haml/engine.rb:112:in `initialize'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `new'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `compile'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (133.2ms)
+Rendered rescues/_request_and_response (36.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 21:56:02) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+ERROR: compiling _run_haml_app47views47posts47_form46html46haml_locals_form_object RAISED compile error
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...emp));}\n#{haml_temp =   :as=>:string,
+                              ^
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:7: syntax error, unexpected tASSOC, expecting '}'
+...p));}\n#{haml_temp =   :hint=>'Make it something catchy'
+                              ^
+Function body:           def _run_haml_app47views47posts47_form46html46haml_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];object = local_assigns[:object];;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :preserve=>["textarea", "pre"], :ugly=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; semantic_form_for(@post, :url => posts_path) do |f|;
+_hamlout.push_text("#{haml_temp =  error_messages_for 'post', :object=>@post
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false); f.inputs :name => "My Cool Form" do;
+
+_hamlout.push_text("#{haml_temp =  f.input :title,
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =   :as=>:string,
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =   :hint=>'Make it something catchy'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :body, :input_html=> {:rows=>5}
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :live, :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :category, :as => :radio, :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :created_at
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end; f.buttons :class=>'buttons' do;
+
+
+_hamlout.push_text("<li>\n  #{_hamlout.adjust_tabs(1); haml_temp =  f.submit "Save"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n</li>\n<li>\n  #{haml_temp =  link_to "Cancel", posts_path
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n</li>\n", -1, false);end;end;_hamlout.push_text("<p>wassup</p>\n", 0, false);@haml_buffer = @haml_buffer.upper;_erbout;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:20:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers.rb:96:in `non_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...emp));}\n#{haml_temp =   :as=>:string,
+                              ^
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:7: syntax error, unexpected tASSOC, expecting '}'
+...p));}\n#{haml_temp =   :hint=>'Make it something catchy'
+                              ^) on line #6 of app/views/posts/_form.html.haml:
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input :title,
+5:     =  :as=>:string,
+6:     =  :hint=>'Make it something catchy'
+7:     = f.input :body, :input_html=> {:rows=>5}
+8:     = f.input :live, :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+9:     = f.input :category, :as => :radio, :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+
+    app/views/posts/_form.html.haml:20:in `compile!'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (119.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 22:13:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+
+ActionView::TemplateError (The line was indented 5 levels deeper than the previous line.) on line #5 of app/views/posts/_form.html.haml:
+2:   = error_messages_for 'post', :object=>@post
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input :title,
+5:               :as=>:string, :hint=>'Make it something catchy'
+6:     = f.input :body, :input_html=> {:rows=>5}
+7:     = f.input :live, :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+8:     = f.input :category, :as => :radio, :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+
+    app/views/posts/_form.html.haml:5
+    haml (2.2.6) lib/haml/precompiler.rb:171:in `precompile'
+    haml (2.2.6) lib/haml/engine.rb:112:in `initialize'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `new'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `compile'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (129.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 22:13:42) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+
+ActionView::TemplateError (Invalid filter name ":as=>:string, :hint=>'make it something catchy'".) on line #5 of app/views/posts/_form.html.haml:
+2:   = error_messages_for 'post', :object=>@post
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input :title,
+5:       :as=>:string, :hint=>'Make it something catchy'
+6:     = f.input :body, :input_html=> {:rows=>5}
+7:     = f.input :live, :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+8:     = f.input :category, :as => :radio, :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+
+    app/views/posts/_form.html.haml:5
+    haml (2.2.6) lib/haml/precompiler.rb:839:in `start_filtered'
+    haml (2.2.6) lib/haml/precompiler.rb:237:in `process_line'
+    haml (2.2.6) lib/haml/precompiler.rb:168:in `precompile'
+    haml (2.2.6) lib/haml/engine.rb:112:in `initialize'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `new'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `compile'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (131.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 22:16:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+
+ActionView::TemplateError (Invalid filter name ":as=>:string,   :hint=>'make it something catchy' )".) on line #5 of app/views/posts/_form.html.haml:
+2:   = error_messages_for 'post', :object=>@post
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input( :title,
+5:       :as=>:string,   :hint=>'Make it something catchy' )
+6:     = f.input :body,     :input_html => {:rows=>5}
+7:     = f.input :live,     :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+8:     = f.input :category, :as => :radio,  :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+
+    app/views/posts/_form.html.haml:5
+    haml (2.2.6) lib/haml/precompiler.rb:839:in `start_filtered'
+    haml (2.2.6) lib/haml/precompiler.rb:237:in `process_line'
+    haml (2.2.6) lib/haml/precompiler.rb:168:in `precompile'
+    haml (2.2.6) lib/haml/engine.rb:112:in `initialize'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `new'
+    haml (2.2.6) rails/./lib/haml/template/plugin.rb:21:in `compile'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 22:16:57) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+ERROR: compiling _run_haml_app47views47posts47_form46html46haml_locals_form_object RAISED compile error
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:5: syntax error, unexpected ';', expecting ')'
+..._temp = nil; haml_very_temp));}\n", 0, false);          :as=...
+                              ^
+Function body:           def _run_haml_app47views47posts47_form46html46haml_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];object = local_assigns[:object];;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :preserve=>["textarea", "pre"], :ugly=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; semantic_form_for(@post, :url => posts_path) do |f|;
+_hamlout.push_text("#{haml_temp =  error_messages_for 'post', :object=>@post
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false); f.inputs :name => "My Cool Form" do;
+_hamlout.push_text("#{haml_temp =  f.input( :title,
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);          :as=>:string,   :hint=>'Make it something catchy' );
+
+_hamlout.push_text("#{haml_temp =  f.input :body,     :input_html => {:rows=>5}
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :live,     :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :category, :as => :radio,  :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n#{haml_temp =  f.input :created_at
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end; f.buttons :class=>'buttons' do;
+
+
+_hamlout.push_text("<li>\n  #{_hamlout.adjust_tabs(1); haml_temp =  f.submit "Save"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n</li>\n<li>\n  #{haml_temp =  link_to "Cancel", posts_path
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n</li>\n", -1, false);end;end;_hamlout.push_text("<p>wassup</p>\n", 0, false);@haml_buffer = @haml_buffer.upper;_erbout;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:19:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers.rb:96:in `non_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.6/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/home/Sites/1. MyGems/test_formtastic_sass/app/views/posts/_form.html.haml:5: syntax error, unexpected ';', expecting ')'
+..._temp = nil; haml_very_temp));}\n", 0, false);          :as=...
+                              ^) on line #5 of app/views/posts/_form.html.haml:
+2:   = error_messages_for 'post', :object=>@post
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input( :title,
+5:     -          :as=>:string,   :hint=>'Make it something catchy' )
+6:     = f.input :body,     :input_html => {:rows=>5}
+7:     = f.input :live,     :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+8:     = f.input :category, :as => :radio,  :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+
+    app/views/posts/_form.html.haml:19:in `compile!'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (118.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 22:17:12) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `-@' for :as:Symbol) on line #6 of app/views/posts/_form.html.haml:
+3:   - f.inputs :name => "My Cool Form" do
+4:     = f.input( :title, |
+5:     -          :as=>:string,   :hint=>'Make it something catchy' ) |
+6:     = f.input :body,     :input_html => {:rows=>5}
+7:     = f.input :live,     :as => :select, :collection=>['Draft','Published'], :prompt=>'Choose'
+8:     = f.input :category, :as => :radio,  :collection=>['Accessories','Bookshelves','Cameras','Digital','Printers','Scanners'], :hint=>'Javascript class toggling is a bit off in Safari. Best to debug in FF3+'
+9:     = f.input :created_at
+
+    app/views/posts/_form.html.haml:6:in `_run_haml_app47views47posts47_form46html46haml_locals_form_object'
+    haml (2.2.6) lib/haml/helpers.rb:325:in `call'
+    haml (2.2.6) lib/haml/helpers.rb:325:in `capture_haml'
+    haml (2.2.6) lib/haml/helpers.rb:520:in `with_haml_buffer'
+    haml (2.2.6) lib/haml/helpers.rb:321:in `capture_haml'
+    formtastic (0.9.1) rails/./lib/formtastic.rb:1027:in `field_set_and_list_wrapping'
+    formtastic (0.9.1) rails/./lib/formtastic.rb:246:in `inputs'
+    app/views/posts/_form.html.haml:5:in `_run_haml_app47views47posts47_form46html46haml_locals_form_object'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:163:in `call'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:163:in `form_for'
+    haml (2.2.6) lib/haml/helpers.rb:542:in `call'
+    haml (2.2.6) lib/haml/helpers.rb:542:in `haml_bind_proc'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:169:in `form_for'
+    formtastic (0.9.1) rails/./lib/formtastic.rb:1397:in `semantic_form_for'
+    formtastic (0.9.1) rails/./lib/formtastic.rb:1356:in `use_custom_field_error_proc'
+    formtastic (0.9.1) rails/./lib/formtastic.rb:1396:in `semantic_form_for'
+    app/views/posts/_form.html.haml:1:in `_run_haml_app47views47posts47_form46html46haml_locals_form_object'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.6) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/posts/new.html.haml:30:in `_run_haml_app47views47posts47new46html46haml'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.6) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (142.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 22:17:17) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.4ms)
+Completed in 180ms (View: 84, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 23:42:50) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.9ms)
+Completed in 120ms (View: 96, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-04 23:44:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (72.9ms)
+Completed in 180ms (View: 157, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 01:04:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 01:04:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 01:06:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 01:06:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 01:06:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (164.1ms)
+Completed in 421ms (View: 391, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 01:06:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (56.5ms)
+Completed in 85ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:11:35) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (157.5ms)
+Completed in 191ms (View: 164, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:14:37) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.5ms)
+Completed in 116ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:15:57) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.8ms)
+Completed in 119ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:17:58) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.1ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:19:36) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.0ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:27:26) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (162.9ms)
+Completed in 196ms (View: 169, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:29:25) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.4ms)
+Completed in 115ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:30:02) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.3ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:30:37) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.1ms)
+Completed in 118ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:31:40) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.8ms)
+Completed in 122ms (View: 94, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:33:44) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (166.4ms)
+Completed in 201ms (View: 173, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:35:01) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.0ms)
+Completed in 119ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:36:41) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (81.7ms)
+Completed in 115ms (View: 88, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:37:43) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.7ms)
+Completed in 120ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:38:28) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.2ms)
+Completed in 116ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:40:22) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.4ms)
+Completed in 116ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:41:59) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.5ms)
+Completed in 116ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:45:11) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.2ms)
+Completed in 119ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:46:19) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (163.0ms)
+Completed in 198ms (View: 170, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:47:31) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.6ms)
+Completed in 119ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:49:02) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.0ms)
+Completed in 119ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:49:29) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.0ms)
+Completed in 121ms (View: 93, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:53:27) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (86.7ms)
+Completed in 202ms (View: 175, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:55:17) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (81.6ms)
+Completed in 190ms (View: 163, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:55:50) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.5ms)
+Completed in 117ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:57:31) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.0ms)
+Completed in 115ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 01:59:43) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (168.8ms)
+Completed in 203ms (View: 176, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:00:29) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.4ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:01:26) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.9ms)
+Completed in 120ms (View: 92, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:03:42) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.4ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:04:46) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.1ms)
+Completed in 115ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:08:00) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.2ms)
+Completed in 116ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:08:30) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.0ms)
+Completed in 115ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:08:44) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (169.0ms)
+Completed in 203ms (View: 176, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:09:17) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.9ms)
+Completed in 118ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:11:41) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.6ms)
+Completed in 117ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:12:14) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.2ms)
+Completed in 117ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:14:41) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.1ms)
+Completed in 116ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:15:20) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (81.5ms)
+Completed in 116ms (View: 88, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:15:58) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.8ms)
+Completed in 124ms (View: 93, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:17:13) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (164.1ms)
+Completed in 198ms (View: 171, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:17:41) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.6ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:18:23) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.1ms)
+Completed in 122ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:19:06) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.5ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:19:35) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (166.9ms)
+Completed in 201ms (View: 174, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:20:12) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (81.8ms)
+Completed in 115ms (View: 88, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:22:12) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.1ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:23:47) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.4ms)
+Completed in 116ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:26:56) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.7ms)
+Completed in 199ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:27:53) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (81.6ms)
+Completed in 116ms (View: 88, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:28:02) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (83.5ms)
+Completed in 118ms (View: 90, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:28:32) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (170.8ms)
+Completed in 205ms (View: 178, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:29:36) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.7ms)
+Completed in 116ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:30:12) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.5ms)
+Completed in 118ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:31:29) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (91.4ms)
+Completed in 128ms (View: 99, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:32:05) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (177.0ms)
+Completed in 212ms (View: 184, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:33:19) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.6ms)
+Completed in 121ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-05 02:33:28) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"JNKhVYxqPHbURalLNL6tZc5lmwYjT5MiSxa2gZh7rS4="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (85.6ms)
+Completed in 120ms (View: 93, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:48:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (161.5ms)
+Completed in 431ms (View: 378, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:49:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (133.4ms)
+Completed in 181ms (View: 158, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:55:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:56:08) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.3ms)
+Completed in 169ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:57:06) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:57:51) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.2ms)
+Completed in 85ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:58:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.4ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 21:58:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.5ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:00:31) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.0ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:01:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.5ms)
+Completed in 89ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:03:27) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (144.8ms)
+Completed in 174ms (View: 152, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:03:51) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.1ms)
+Completed in 86ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:04:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.3ms)
+Completed in 90ms (View: 68, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:07:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.7ms)
+Completed in 105ms (View: 83, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:09:09) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.3ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:13:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.8ms)
+Completed in 91ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:14:49) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.5ms)
+Completed in 95ms (View: 72, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:17:13) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.8ms)
+Completed in 95ms (View: 71, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:18:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.4ms)
+Completed in 94ms (View: 71, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:20:13) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.7ms)
+Completed in 96ms (View: 72, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:20:45) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (154.3ms)
+Completed in 185ms (View: 162, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:21:57) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.4ms)
+Completed in 94ms (View: 71, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:22:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.4ms)
+Completed in 94ms (View: 70, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:22:32) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.7ms)
+Completed in 199ms (View: 79, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:23:57) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.6ms)
+Completed in 103ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:25:29) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (71.5ms)
+Completed in 108ms (View: 82, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:25:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.9ms)
+Completed in 104ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:27:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (72.4ms)
+Completed in 207ms (View: 179, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:28:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.8ms)
+Completed in 103ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:29:41) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (77.8ms)
+Completed in 116ms (View: 87, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:31:05) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (183.9ms)
+Completed in 218ms (View: 193, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-05 22:34:16) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.5ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-06 00:18:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-06 00:18:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 00:18:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.9ms)
+Completed in 92ms (View: 68, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 02:28:50) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.1ms)
+Completed in 101ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 11:39:00) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (139.5ms)
+Completed in 377ms (View: 350, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-06 11:49:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-06 11:49:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 12:04:22) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.2ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 12:04:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (65.3ms)
+Completed in 176ms (View: 72, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:00:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.6ms)
+Completed in 88ms (View: 65, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:01:22) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.2ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:01:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.1ms)
+Completed in 89ms (View: 67, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:01:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.7ms)
+Completed in 171ms (View: 149, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:03:17) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.1ms)
+Completed in 90ms (View: 68, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:04:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (193.6ms)
+Completed in 222ms (View: 200, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:05:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.4ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:07:51) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.6ms)
+Completed in 94ms (View: 71, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:08:24) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.0ms)
+Completed in 167ms (View: 66, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:09:14) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.3ms)
+Completed in 85ms (View: 64, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:10:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.6ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:11:02) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.3ms)
+Completed in 87ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:13:09) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.2ms)
+Completed in 93ms (View: 69, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:16:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.4ms)
+Completed in 95ms (View: 71, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:17:02) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (164.7ms)
+Completed in 196ms (View: 172, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:17:18) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.7ms)
+Completed in 93ms (View: 70, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:17:38) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.0ms)
+Completed in 93ms (View: 69, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:17:52) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.7ms)
+Completed in 94ms (View: 70, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:18:31) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.5ms)
+Completed in 182ms (View: 158, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:18:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.0ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:18:54) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (74.1ms)
+Completed in 112ms (View: 82, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:19:11) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (162.9ms)
+Completed in 194ms (View: 171, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:23:12) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (80.0ms)
+Completed in 118ms (View: 89, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:23:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (73.0ms)
+Completed in 109ms (View: 81, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:25:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (79.5ms)
+Completed in 118ms (View: 89, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:27:41) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (76.3ms)
+Completed in 121ms (View: 93, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:28:27) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (80.5ms)
+Completed in 118ms (View: 89, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:28:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.8ms)
+Completed in 103ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:29:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.3ms)
+Completed in 104ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:31:41) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (78.9ms)
+Completed in 116ms (View: 88, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:32:13) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (79.1ms)
+Completed in 116ms (View: 88, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:32:51) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (97.8ms)
+Completed in 146ms (View: 118, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:34:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (185.4ms)
+Completed in 222ms (View: 194, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:36:23) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (101.8ms)
+Completed in 143ms (View: 111, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:37:06) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (102.9ms)
+Completed in 146ms (View: 113, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:37:58) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (99.3ms)
+Completed in 141ms (View: 109, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:42:16) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (151.5ms)
+Completed in 181ms (View: 158, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:42:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (78.6ms)
+Completed in 108ms (View: 86, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:42:49) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.0ms)
+Completed in 98ms (View: 76, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:43:07) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.3ms)
+Completed in 96ms (View: 74, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:45:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.6ms)
+Completed in 95ms (View: 73, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:47:19) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.4ms)
+Completed in 96ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:47:29) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.3ms)
+Completed in 180ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:48:50) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.7ms)
+Completed in 96ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:50:31) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.8ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:50:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (148.3ms)
+Completed in 177ms (View: 155, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:52:18) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.1ms)
+Completed in 94ms (View: 73, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:53:08) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.6ms)
+Completed in 98ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:53:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (151.5ms)
+Completed in 180ms (View: 158, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:53:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.9ms)
+Completed in 97ms (View: 76, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:54:58) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (144.8ms)
+Completed in 173ms (View: 151, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:57:22) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (74.7ms)
+Completed in 111ms (View: 89, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:59:29) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.0ms)
+Completed in 98ms (View: 76, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 13:59:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.0ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:00:13) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.3ms)
+Completed in 98ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:00:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.5ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:01:22) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.9ms)
+Completed in 98ms (View: 76, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:01:44) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.0ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:01:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (150.2ms)
+Completed in 178ms (View: 157, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:02:14) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.2ms)
+Completed in 95ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:05:12) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (146.5ms)
+Completed in 175ms (View: 153, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:05:44) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.8ms)
+Completed in 98ms (View: 76, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:05:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.8ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:05:58) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (65.6ms)
+Completed in 94ms (View: 73, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:06:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.1ms)
+Completed in 95ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:07:01) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (154.3ms)
+Completed in 182ms (View: 161, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:07:59) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.0ms)
+Completed in 97ms (View: 76, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:09:02) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (69.7ms)
+Completed in 98ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:09:27) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.1ms)
+Completed in 169ms (View: 148, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:09:50) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.9ms)
+Completed in 95ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:10:05) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.8ms)
+Completed in 100ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:12:52) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.7ms)
+Completed in 101ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:13:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (75.8ms)
+Completed in 113ms (View: 91, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:14:07) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (150.8ms)
+Completed in 181ms (View: 158, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:14:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (77.0ms)
+Completed in 113ms (View: 87, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:15:13) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.0ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:15:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (144.1ms)
+Completed in 173ms (View: 151, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:15:38) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.4ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:15:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (73.9ms)
+Completed in 104ms (View: 81, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:16:01) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.0ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:16:09) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.9ms)
+Completed in 182ms (View: 160, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:16:18) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.2ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:16:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.1ms)
+Completed in 95ms (View: 74, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:16:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (74.3ms)
+Completed in 104ms (View: 81, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:17:14) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (161.9ms)
+Completed in 191ms (View: 169, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:17:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.5ms)
+Completed in 99ms (View: 77, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:17:48) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.9ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:18:00) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.5ms)
+Completed in 170ms (View: 149, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:18:16) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.5ms)
+Completed in 94ms (View: 73, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-06 14:18:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (66.8ms)
+Completed in 94ms (View: 73, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:08:20) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (172.8ms)
+Completed in 395ms (View: 341, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:09:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.7ms)
+Completed in 96ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:13:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (147.6ms)
+Completed in 176ms (View: 154, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:15:24) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.9ms)
+Completed in 99ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:17:01) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (147.9ms)
+Completed in 176ms (View: 155, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:17:53) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.5ms)
+Completed in 96ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:19:03) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.8ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:19:15) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.7ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:19:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (149.6ms)
+Completed in 178ms (View: 157, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:21:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.3ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:22:18) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.3ms)
+Completed in 95ms (View: 74, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:22:47) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.1ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:25:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.9ms)
+Completed in 185ms (View: 163, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:25:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.6ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:26:33) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (68.0ms)
+Completed in 97ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:32:12) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (148.7ms)
+Completed in 177ms (View: 155, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:34:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (67.7ms)
+Completed in 96ms (View: 75, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:35:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (74.4ms)
+Completed in 105ms (View: 82, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:36:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.5ms)
+Completed in 100ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:37:12) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (70.4ms)
+Completed in 101ms (View: 77, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:38:38) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (64.8ms)
+Completed in 101ms (View: 79, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:39:56) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.3ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:40:13) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (56.2ms)
+Completed in 85ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:42:03) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.5ms)
+Completed in 88ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:42:14) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.9ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-08 00:49:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-08 00:49:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-08 00:49:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:49:09) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (63.0ms)
+Completed in 93ms (View: 70, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:50:56) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (71.6ms)
+Completed in 119ms (View: 83, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:51:32) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (78.1ms)
+Completed in 109ms (View: 87, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:52:17) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.6ms)
+Completed in 92ms (View: 70, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:52:32) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.9ms)
+Completed in 181ms (View: 158, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:52:50) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.0ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:54:31) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:55:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (60.1ms)
+Completed in 181ms (View: 67, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:55:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.9ms)
+Completed in 89ms (View: 66, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:55:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.0ms)
+Completed in 91ms (View: 68, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:56:06) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.3ms)
+Completed in 95ms (View: 71, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:56:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (153.4ms)
+Completed in 183ms (View: 160, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 00:57:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.5ms)
+Completed in 91ms (View: 70, DB: 0) | 200 OK [http://192.168.1.30/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 04:14:23) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (182.5ms)
+Completed in 212ms (View: 190, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 04:14:57) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (58.0ms)
+Completed in 86ms (View: 65, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 14:19:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (92.2ms)
+Completed in 120ms (View: 99, DB: 0) | 200 OK [http://localhost/posts/new]
+/!\ FAILSAFE /!\  Sun Nov 08 21:28:06 +0100 2009
+  Status: 500 Internal Server Error
+  File to import not found or unreadable: formtastic_theme.sass.
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/files.rb:80:in `find_file_to_import'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:204:in `dependencies'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:203:in `map'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:203:in `dependencies'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:202:in `map'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:202:in `dependencies'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:191:in `exact_stylesheet_needs_update?'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:183:in `stylesheet_needs_update?'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:68:in `update_stylesheets'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:64:in `each'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:64:in `update_stylesheets'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:62:in `each'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin.rb:62:in `update_stylesheets'
+    /Users/home/Sites/1-MyGems/test_formtastic_sass/vendor/gems/haml-2.2.6/rails/../lib/sass/plugin/rails.rb:16:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:65:in `call_with_exception'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-08 21:29:27) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"qgZ17ldxIYn6JuGFcL2Ow0jceOH4qFhiAEw9veUx9Mc="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (82.6ms)
+Completed in 117ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-08 21:29:44) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"created_at(1i)"=>"", "created_at(2i)"=>"", "body"=>"", "title"=>"", "created_at(3i)"=>"", "created_at(4i)"=>"", "created_at(5i)"=>"", "live"=>""}, "authenticity_token"=>"qgZ17ldxIYn6JuGFcL2Ow0jceOH4qFhiAEw9veUx9Mc="}
+WARNING: Can't mass-assign these protected attributes: created_at(1i), created_at(2i), created_at(3i), created_at(4i), created_at(5i)
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (84.2ms)
+Completed in 119ms (View: 91, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:29:55) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (55.2ms)
+Completed in 83ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:30:24) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (136.2ms)
+Completed in 164ms (View: 143, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:31:44) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (62.1ms)
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:31:46) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.4ms)
+Completed in 89ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:32:06) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (56.3ms)
+Completed in 84ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:32:31) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (59.0ms)
+Completed in 87ms (View: 66, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:32:35) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (55.9ms)
+Completed in 84ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:33:12) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (57.4ms)
+Completed in 86ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:33:52) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (139.2ms)
+Completed in 167ms (View: 146, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:34:00) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (56.0ms)
+Completed in 84ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:34:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (55.3ms)
+Completed in 84ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:34:41) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (135.9ms)
+Completed in 164ms (View: 142, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:35:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (56.1ms)
+Completed in 84ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 21:35:37) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (56.9ms)
+Completed in 85ms (View: 64, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-08 22:11:29) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (61.4ms)
+Completed in 107ms (View: 86, DB: 0) | 200 OK [http://localhost/posts/new]

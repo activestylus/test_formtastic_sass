@@ -1,0 +1,13 @@
+h1. This is a demo application for "Formtastic-Sass":http://www.github.com/active-stylus/formtastic-sass
+
+Powered by jQuery for on-the-fly switching of form layouts.
+
+<pre>
+  git clone http://www.http://www.github.com/active-stylus/test-formtastic-sass
+  cd test-formtastic-sass
+  rake gems:install
+  rake db:migrate
+  ./script/server
+</pre>
+
+Then visit http://localhost:3000/posts/new and have a poke around

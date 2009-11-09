@@ -1,0 +1,31 @@
+- title "New Post"
+
+#styles
+  %p#style-switcher
+    %strong Form Style:
+    = link_to "No Layout", "#", :title=>'no-style', :class=>'active no-sub'
+    |
+    = link_to "Stack", "#", :title=>'stack', :class=>'sub'
+    |
+    = link_to "Float Left", "#", :title=>'float-left', :class=>'sub'
+    |
+    = link_to "Float Right", "#", :title=>'float-right', :class=>'sub'
+
+  %p#input-switcher
+    %strong Check/Radio Inputs:
+    = link_to "Default", "#", :title=>'input-default', :class=>'active'
+    |
+    = link_to "Inline Float", "#", :title=>'input-float'
+    |
+    = link_to "Grid (200px)", "#", :title=>'input-grid'
+
+  %p#button-switcher
+    %strong Submit Buttons:
+    = link_to "Left", "#", :title=>'buttons-left', :class=>'active'
+    |
+    = link_to "Right", "#", :title=>'buttons-right'
+
+
+#form{:class=>params[:form]}= render :partial => 'form'
+
+%p= link_to "Back to List", posts_path
